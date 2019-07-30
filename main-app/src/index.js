@@ -9,7 +9,7 @@ import {storeInstance} from "./store/reducers/store"
 import {GlobalEventDistributor} from "./store/globalEventDistributor";
 import {Provider, connect} from 'react-redux';
 import { userConstants } from './store/constants';
-
+import { registerAngularApp } from "./apps/register-angular-app";
 
 ReactDOM.render(
     <Provider store={storeInstance}>
@@ -22,6 +22,7 @@ const globalEventDistributor = new GlobalEventDistributor();
 
 globalEventDistributor.registerStore(storeInstance,userConstants.STORE_AUTH);
 
+registerAngularApp();
 registerLoginAppReact(globalEventDistributor);
 singleSpa.start();
 
