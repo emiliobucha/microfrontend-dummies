@@ -15,6 +15,7 @@ class App extends Component {
                 <div>
                     <div>
                         <div id="react-app"/>
+                        <div id="login-app-react"/>
                     </div>
                 </div>
             </div>
