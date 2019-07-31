@@ -1,0 +1,14 @@
+{
+  "name": "tarjeta-foto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tarjeta-foto.js",
+  "scripts": {
+    "start": "serve -l 5000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^11.1.0"
+  }
+}

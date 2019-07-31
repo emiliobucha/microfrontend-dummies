@@ -12,4 +12,19 @@ export class GrillaComponent implements OnInit {
   ngOnInit() {
   }
 
+  abrirTarjeta(personaje) {
+    debugger;
+    if (!personaje) {
+      personaje = {nombre: 'Homero', apellido: 'Simpson', foto: 'https://media.canalnet.tv/2018/08/Homero-Simpson.jpeg'};
+    }
+
+    const modal = document.querySelector('tarjeta-foto');
+
+    const nombreCompleto = personaje.nombre + ' ' + personaje.apellido;
+    modal.setAttribute('nombre', nombreCompleto);
+    modal.setAttribute('foto', personaje.foto);
+    modal.setAttribute('visible', 'true');
+
+  }
+
 }
