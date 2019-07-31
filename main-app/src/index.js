@@ -10,6 +10,7 @@ import {GlobalEventDistributor} from "./store/globalEventDistributor";
 import {Provider, connect} from 'react-redux';
 import { userConstants } from './store/constants';
 import { registerAngularApp } from "./apps/register-angular-app";
+import { registerNavbarAppVue } from "./apps/navbar-app-vue";
 
 ReactDOM.render(
     <Provider store={storeInstance}>
@@ -24,6 +25,7 @@ globalEventDistributor.registerStore(storeInstance,userConstants.STORE_AUTH);
 
 registerAngularApp();
 registerLoginAppReact(globalEventDistributor);
+registerNavbarAppVue(globalEventDistributor);
 singleSpa.start();
 
 

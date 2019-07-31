@@ -10,7 +10,6 @@ const loadReactApp = async () => {
 
 
 export const registerLoginAppReact = (globalEventDistributor) => {
-    console.log(globalEventDistributor);
     const customProps = {
         globalEventDistributor: globalEventDistributor,
         constants: userConstants

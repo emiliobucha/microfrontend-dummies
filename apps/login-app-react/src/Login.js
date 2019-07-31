@@ -18,7 +18,8 @@ class LoginForm extends Component {
     user={
         username:'admin',
         password:'admin',
-        mail:'admin@admin.com'
+        mail:'admin@admin.com',
+        nombre:'Administrador'
     };
 
     constructor(props) {
@@ -27,8 +28,8 @@ class LoginForm extends Component {
             username: '',
             password: '',
             submitted: false,
-         //   globalEventDistributor: this.props.customProps.globalEventDistributor,
-         //   constants: this.props.customProps.constants,
+            globalEventDistributor: this.props.globalEventDistributor,
+            constants: this.props.constants,
         };
         this.login = this.login.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -38,15 +39,14 @@ class LoginForm extends Component {
     login(e) {
     e.preventDefault();
     this.setState({submitted: true});
-    //const {username, password, globalEventDistributor, constants} = this.state;
-        const {username, password} = this.state;
+    const {username, password, globalEventDistributor, constants} = this.state;
     if (username && password) {
 
 
         try {
             if (username === this.user.username && password === this.user.password) {
                 ToastsStore.success("Bienvenido: " + this.user.email);
-              //  globalEventDistributor.dispatch({type: constants.LOGIN, user: this.user});
+                globalEventDistributor.dispatch({type: constants.LOGIN, user: this.user});
                 localStorage.setItem('user', JSON.stringify(this.user));
             } else {
                 ToastsStore.error('Usuario y/o contraseña incorrecto');

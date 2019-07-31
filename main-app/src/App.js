@@ -17,6 +17,7 @@ class App extends Component {
                         <div id="react-app"/>
                         <div id="angularapp"/>
                         <div id="login-app-react"/>
+                        <div id="navbar-app-vue"/>
                     </div>
                 </div>
             </div>
