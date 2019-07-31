@@ -12,7 +12,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 
 registerAngularApp();
-//registerReactApp();
+registerReactApp();
 singleSpa.start();
 
 

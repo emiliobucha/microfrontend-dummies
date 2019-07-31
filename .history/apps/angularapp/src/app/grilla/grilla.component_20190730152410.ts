@@ -12,10 +12,11 @@ export class GrillaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    setTimeout(() => {
-      this.loading = false;
-    }, 3500);
+  
   }
 
+  setTimeout(() => {
+    this.loading = false 
+  }, 3500);
 
 }

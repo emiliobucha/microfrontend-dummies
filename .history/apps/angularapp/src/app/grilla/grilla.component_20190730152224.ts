@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GrillaComponent implements OnInit {
 
-  loading = true;
+  laoding = true;
 
   constructor() { }
 
   ngOnInit() {
-    setTimeout(() => {
-      this.loading = false;
-    }, 3500);
+  
   }
 
-
+  setTimeout(() => {
+    this.loading = false;
+  }, 3500);
 }
