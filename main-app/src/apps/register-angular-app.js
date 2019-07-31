@@ -8,6 +8,6 @@ const loadAngularApp = async () => {
 
 
 export const registerAngularApp = () => {
-    singleSpa.registerApplication('angularapp', loadAngularApp, matchingPathname(['/angularapp', '/']));
+    singleSpa.registerApplication('angularapp', loadAngularApp, matchingPathname(['/angularapp', '/home']));
 };
 
