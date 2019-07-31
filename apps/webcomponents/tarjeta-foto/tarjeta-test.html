@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>x-modal</title>
+</head>
+
+<body>
+  <h3>Modal Test</h3>
+
+  <button class="open">Open</button>
+
+  <tarjeta-foto nombre="Homero Simpson" foto="https://media.canalnet.tv/2018/08/Homero-Simpson.jpeg" visible>
+  </tarjeta-instalador-wc>
+
+  <script>
+    modal = document.querySelector("tarjeta-foto");
+    modal.addEventListener("cancel", function () {
+      //console.log("cancel event raised");
+    });
+    modal.addEventListener("ok", function () {
+      //console.log("ok event raised");
+    });
+
+    open = document.querySelector(".open");
+    open.addEventListener("click", function () {
+      modal.visible = true;
+    })
+  </script>
+
+<script src="./tarjeta-foto.js"></script>
+
+</body>
+
+</html>
