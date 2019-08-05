@@ -4,7 +4,7 @@
   "description": "",
   "main": "tarjeta-foto.js",
   "scripts": {
-    "start": "serve -l 5000"
+    "serve": "serve -l 5000"
   },
   "author": "",
   "license": "ISC",

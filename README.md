@@ -13,20 +13,16 @@ Para ejecutar tenemos
     a. npm i
     b. npm run build
     c. npm run serve
-3. Proyecto apps/navbar-app-vuew
+3. Proyecto apps/navbar-app-vuee
     Realizado en VUE
     a. npm i
     b. npm run build
     c. npm run serve
-4. Proyecto apps/gestiones-app-angular
-    Realizado en Angular 7
-    a. npm i
-    b. ng serve --port 4201 --publicHost http://localhost:4201 --disableHostCheck (Viejo)
-    c. npm run serve:single-spa
-5. Proyecto apps/instaladores-app-angular
+4. Proyecto apps/angularapp
     Realizado en Angular 8
     a. npm i
-    b. npm run build:single-spa
-    c. npm run serve:single-spa
-6. WebComponent/tarjeta-instalador
-    a. npm start 
+    b. npm run build
+    c. npm run serve
+
+6. WebComponent/tarjeta-foto
+    a. npm serve

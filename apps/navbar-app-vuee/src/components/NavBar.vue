@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Image and text -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse">
           <span class="navbar-toggler-icon"></span>
