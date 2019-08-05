@@ -7,7 +7,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <img class="logo" src="../assets/logo-dummis.jpg" alt="">
-          <span class="navbar-brand mr-auto">CabiField</span>
+          <span class="navbar-brand mr-auto nombreLogo">  MicroFrontend </span>
 
           <div class="">
             <ul class="nav pull-right navbar-collapse collapse dual-collapse profileDiv">
